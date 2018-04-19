@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#84BCDA"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/playerOneEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:text="Player One"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/playerOneImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="1"
+            android:maxHeight="@android:dimen/thumbnail_height"
+            android:maxWidth="@android:dimen/thumbnail_width"
+            android:onClick="takePicturePlayerOne"
+            app:srcCompat="@drawable/placeholder" />
+
+        <EditText
+            android:id="@+id/playerTwoEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:text="Player Two"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/playerTwoImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="3"
+            android:onClick="takePicturePlayerTwo"
+            app:srcCompat="@drawable/placeholder" />
+
+        <ImageView
+            android:id="@+id/playButton"
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="@android:dimen/notification_large_icon_height"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_row="4"
+            android:alpha="0.8"
+            android:onClick="playButtonOnClick"
+            app:srcCompat="@drawable/playbutton" />
+
+
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>
